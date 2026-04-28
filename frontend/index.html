@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Burger Legends Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Burger Legends Hamburg</h1>
+<p>Legendary Burgers. Digital Experience Demo.</p>
+</header>
+
+<section class="hero">
+<h2>Reserve a Table</h2>
+
+<form id="reservationForm">
+
+<input 
+id="name"
+placeholder="Your Name"
+required
+/>
+
+<input
+id="party"
+type="number"
+placeholder="Party Size"
+required
+/>
+
+<input
+id="time"
+type="datetime-local"
+required
+/>
+
+<button type="submit">
+Reserve Now
+</button>
+
+</form>
+
+</section>
+
+
+<section>
+<h2>Today's Reservations</h2>
+
+<button onclick="loadReservations()">
+Load Reservations
+</button>
+
+<ul id="reservationList"></ul>
+
+</section>
+
+<section>
+<h2>Restaurant Dashboard</h2>
+
+<button onclick="loadDashboard()">
+Load Analytics
+</button>
+
+<div id="dashboard"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
